@@ -1,0 +1,27 @@
+<center>
+<div class="card card-body p-5 mt-4" >
+  <h1 class="display-4">Notes App</h1>
+  <p class="lead">Bienvenido</p>
+  <hr class="my-4" />
+  {{#if user}}
+
+    <center>
+  <div>
+    <a
+      class="btn btn-primary btn-lg"
+    >Gracias por formar parte del equipo</a>
+  </div>
+  </center>
+  {{else}}
+  <center>
+  <div>
+    <a
+      class="btn btn-primary btn-lg"
+      href="/auth/signup"
+      role="button"
+    >Registro</a>
+  </div>
+  </center>
+   {{/if}}
+</div>
+</center>
